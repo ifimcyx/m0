@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M0 Beta</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PingFang+SC:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="content-frame">
+            <!-- 顶部导航 -->
+            <header class="top-nav">
+                <div class="logo-container">
+                    <img src="images/logo.svg" alt="Logo" class="logo">
+                    <span class="beta-tag">Beta</span>
+                </div>
+                <div class="user-container">
+                    <div class="user-wrapper">
+                        <img src="images/user_icon.svg" alt="User" class="user-icon">
+                        <div class="avatar">
+                            <img src="images/avatar.png" alt="Avatar">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- 主要内容区域 -->
+            <div class="main-content">
+                <!-- 搜索区域 -->
+                <div class="search-section">
+                    <div class="search-container">
+                        <img src="images/search_icon.svg" alt="Search" class="search-icon">
+                        <div class="search-text">
+                            <p>今天你想创建一个什么样的页面呢？</p>
+                        </div>
+                    </div>
+                    
+                    <!-- 推荐选项 -->
+                    <div class="recommend-section">
+                        <div class="recommend-card">
+                            <div class="chat-icon">
+                                <div class="chat-bubbles"></div>
+                            </div>
+                            <p class="recommend-text">一步步引导我生成页面</p>
+                        </div>
+                        
+                        <div class="recommend-card">
+                            <img src="images/prd_icon.svg" alt="PRD" class="prd-icon">
+                            <p class="recommend-text">根据提供的PRD帮我生成页面</p>
+                        </div>
+                        
+                        <div class="recommend-card">
+                            <img src="images/form_icon.svg" alt="Form" class="form-icon">
+                            <p class="recommend-text">创建一个员工信息提交的表单页面</p>
+                        </div>
+                        
+                        <div class="recommend-card">
+                            <img src="images/table_icon.svg" alt="Table" class="table-icon">
+                            <p class="recommend-text">创建一个员工信息展示的表格页面</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 底部输入区域 -->
+                <div class="input-section">
+                    <div class="ai-input-container">
+                        <div class="input-dialog">
+                            <div class="input-content">
+                                <div class="textarea-container">
+                                    <p class="placeholder">描述你需要生成的页面并发送...</p>
+                                </div>
+                                
+                                <div class="input-actions">
+                                    <div class="input-options">
+                                        <div class="model-selector">
+                                            <span class="model-name">GPT-4o</span>
+                                            <div class="dropdown-icon-container">
+                                                <img src="images/dropdown_icon.svg" alt="Dropdown" class="dropdown-icon">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="advanced-settings">
+                                            <img src="images/settings_icon.svg" alt="Settings" class="settings-icon">
+                                        </div>
+                                    </div>
+                                    
+                                    <button class="generate-button">
+                                        <img src="images/send_icon.svg" alt="Send" class="send-icon">
+                                        <span>立即生成</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="disclaimer">M0 beta处于测试阶段，内容均由AI生成，请谨慎使用</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
