@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="main-container">
-        <div class="content-frame">
+        <div class="content-frame initial-view">
             <!-- 顶部导航 -->
             <header class="top-nav">
                 <div class="logo-container">
@@ -98,6 +98,39 @@
                     </div>
                     
                     <p class="disclaimer">M0 beta处于测试阶段，内容均由AI生成，请谨慎使用</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 新增的生成结果视图 -->
+        <div class="result-view hidden">
+            <div class="chat-section">
+                <div class="chat-container">
+                    <div class="chat-messages">
+                        <!-- 聊天消息将在这里动态添加 -->
+                    </div>
+                    <div class="chat-input">
+                        <textarea placeholder="继续输入你的需求..."></textarea>
+                        <button class="send-button">
+                            <img src="images/send_icon.svg" alt="Send">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="preview-section">
+                <div class="preview-header">
+                    <div class="preview-tabs">
+                        <button class="tab-button active" data-tab="preview">预览</button>
+                        <button class="tab-button" data-tab="code">代码</button>
+                    </div>
+                </div>
+                <div class="preview-content">
+                    <div class="preview-panel active">
+                        <iframe id="preview-frame"></iframe>
+                    </div>
+                    <div class="code-panel">
+                        <pre><code class="generated-code"></code></pre>
+                    </div>
                 </div>
             </div>
         </div>
